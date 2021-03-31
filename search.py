@@ -2,7 +2,7 @@ def search(file_name, string_to_search):
     with open(file_name, 'r') as read_obj:
         for line in read_obj:
             if string_to_search in line:
-                return line
+                return line[-3:]
         return 'Does not match!'
 
 

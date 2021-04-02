@@ -7,10 +7,10 @@ def search(file_name, string_to_search):
 
 
 def take_input():
-    while 1:
-        to_search = input("Enter string to search: ").upper()
-        x = search("opcodes8085.txt", to_search)
-        print(x)
+    to_search = input("Enter string to search: ").upper()
+    result = search("opcodes8085.txt", to_search)
+    print(result)
+    take_input()
 
 
 if __name__ == '__main__':

@@ -11,8 +11,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('$opcodeof'):
-        opcodes = s.search(t.file, message.content[9:].upper())
+    if message.content.startswith('&'):
+        opcodes = s.search(t.file, message.content[1:].upper())
         await message.channel.send(opcodes)
 
 
